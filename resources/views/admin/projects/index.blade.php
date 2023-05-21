@@ -27,7 +27,7 @@
                     <td>{{$project->description}}</td>
                     <td>{{$project->languages}}</td>
                     <td>{{$project->repository}}</td>
-                    <td><a href="#">Show More</a></td>
+                    <td><a href="{{route('admin.projects.show', $project->slug)}}">Show More</a></td>
                 </tr>
               @endforeach
 
