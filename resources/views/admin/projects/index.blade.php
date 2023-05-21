@@ -1,0 +1,40 @@
+
+@extends('layouts/admin')
+
+@section('content')
+
+    <div class="container p-2">
+
+        <h2 class="m-3 text-center py-3">
+            Take a look at all the projects!
+        </h2>
+
+        <table class="table table-hover">
+
+            <thead>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Languages</th>
+                <th>Repository</th>
+                <th>Details</th>
+            </thead>
+
+            <tbody>
+
+              @foreach($projects as $project)
+                <tr>
+                    <td>{{$project->title}}</td>
+                    <td>{{$project->description}}</td>
+                    <td>{{$project->languages}}</td>
+                    <td>{{$project->repository}}</td>
+                    <td><a href="#">Show More</a></td>
+                </tr>
+              @endforeach
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+@endsection
