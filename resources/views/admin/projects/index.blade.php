@@ -34,7 +34,7 @@
         </table>
         
         <div class="button d-flex justify-content-center">
-            <button class="btn btn-primary">ADD A PROJECT</button>
+            <a href="{{route('admin.projects.create')}}" class="btn btn-primary">ADD A PROJECT</a>
         </div>
 
     </div>

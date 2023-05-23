@@ -23,6 +23,10 @@
     <div class="project_language">
         <div>- {{$project->languages}} -</div>
     </div>
+    <div class="button my-2">
+        <a class="btn btn-primary" href="{{route('admin.projects.edit', $project->slug)}}">EDIT</a>
+    </div>
 </div>
+
 
 @endsection

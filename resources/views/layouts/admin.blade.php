@@ -103,6 +103,8 @@
                         <h5>Projects</h5>
                         <hr>
                         <div><a href="{{route('admin.projects.index')}}">SHOW ALL PROJECTS</a></div>
+                        
+                        <div><a href="{{route('admin.projects.create')}}">ADD A NEW PROJECT</a></div>
                     </div>
                 </aside>
             </div>
