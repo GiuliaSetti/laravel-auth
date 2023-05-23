@@ -1,8 +1,8 @@
 @extends('layouts.admin')
 @section('content')
 
-<div class="jumbotron bg-light rounded-3">
-    <div class="container p-3">
+<div class="jumbotron bg-light rounded-3 m-3">
+    <div class="container p-2">
 
         <h1 class="fw-bold">
             You are now logged in!
@@ -10,7 +10,6 @@
 
         <div class="container">
             <h4>Admin Page</h4>
-            <a href="{{route('admin.projects.index')}}">Show all projects</a>
         </div>
     </div>
 </div>

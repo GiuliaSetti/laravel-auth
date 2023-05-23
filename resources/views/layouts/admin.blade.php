@@ -89,9 +89,28 @@
             </div>
         </nav>
 
-        <main class="">
-            @yield('content')
-        </main>
+        <div class="admin d-flex">
+            <div>
+                <aside class="m-3 border rounded-2 p-3">
+                    <div>
+                        <h5>Dashboard</h5>
+                        <hr>
+                        <div><a href="{{route('admin.home')}}">HOME</a></div>
+                    </div>
+                </aside>
+                <aside class="m-3 border rounded-2 p-3">
+                    <div>
+                        <h5>Projects</h5>
+                        <hr>
+                        <div><a href="{{route('admin.projects.index')}}">SHOW ALL PROJECTS</a></div>
+                    </div>
+                </aside>
+            </div>
+            <main class="flex-grow-1">
+                @yield('content')
+            </main>
+        </div>
+
     </div>
 </body>
 

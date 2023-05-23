@@ -34,9 +34,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+
 Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(function(){
 
-    Route::get('/', [DashboardController::class, 'home']);
+    Route::get('/', [DashboardController::class, 'home'])->name('home');
     Route::resource('projects', ProjectController::class)->parameters(['projects'=>'project:slug']);
 
 });
