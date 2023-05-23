@@ -91,14 +91,14 @@
 
         <div class="admin d-flex">
             <div>
-                <aside class="m-3 border rounded-2 p-3">
+                <aside class="m-3 border rounded-2 p-3 {{str_contains(Route::currentRouteName(), 'home') ? 'border-primary' : ''}}">
                     <div>
                         <h5>Dashboard</h5>
                         <hr>
                         <div><a href="{{route('admin.home')}}">HOME</a></div>
                     </div>
                 </aside>
-                <aside class="m-3 border rounded-2 p-3">
+                <aside class="m-3 border rounded-2 p-3 {{str_contains(Route::currentRouteName(), 'projects.') ? 'border-primary' : ''}}">
                     <div>
                         <h5>Projects</h5>
                         <hr>

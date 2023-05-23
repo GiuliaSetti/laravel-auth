@@ -13,7 +13,6 @@
 
             <thead>
                 <th>Title</th>
-                <th>Description</th>
                 <th>Languages</th>
                 <th>Repository</th>
                 <th>Details</th>
@@ -24,7 +23,6 @@
               @foreach($projects as $project)
                 <tr>
                     <td>{{$project->title}}</td>
-                    <td>{{$project->description}}</td>
                     <td>{{$project->languages}}</td>
                     <td>{{$project->repository}}</td>
                     <td><a href="{{route('admin.projects.show', $project->slug)}}">Show More</a></td>
@@ -34,6 +32,10 @@
             </tbody>
 
         </table>
+        
+        <div class="button d-flex justify-content-center">
+            <button class="btn btn-primary">ADD A PROJECT</button>
+        </div>
 
     </div>
 
